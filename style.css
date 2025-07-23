@@ -1,0 +1,337 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio {
+    display: grid;
+}
+
+ /* Navigation Section */
+.navigator {
+    width: 100%;
+    display: flex;
+    grid-column: span 2;
+    border-bottom: 1px solid #D6CFB4;
+    position: fixed;
+    background-color: white;
+}
+
+.navigator ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.navigator li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigator li:hover {
+    cursor: pointer;
+}
+
+ /* Introduction Section */
+.introduction {
+    background-color: #498ae6;
+    color: #b8e31b;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction h1 {
+    margin-top: 100px;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.introduction h3 {
+    margin-bottom: 50px;
+}
+
+ /* Hello Section */
+.hello {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 150px;
+}
+
+.hello-img {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-left: 200px;
+}
+
+.hello-content h2 {
+    margin-bottom: 20px;
+}
+
+.hello-content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-right: 200px;
+}
+
+.hello hr {
+    rotate: 90deg;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1530px) {
+    .hello-content {
+        margin-right: 50px;
+    }
+    .hello-img {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-left: 100px;
+    }
+    
+}
+
+@media (max-width: 1380px) {
+    .hello {
+        margin: 20px;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .hello-content {
+        max-width: 800px;
+        margin: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .hello-img {
+        margin-left: 0;
+    }
+    .hello img {
+        margin-left: 0px;
+        margin-top: 50px;
+        width: 150px;
+    }
+    .hello hr {
+        display: none;
+    }
+    .hello {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+
+ /* Skills, Languages, and Hobbies Section */
+.skills-lang {
+    grid-column: span 2;
+    margin-bottom: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+}
+
+.skills-lang strong {
+    /* border: 2px solid black; */
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.skills-lang p {
+    /* border: 2px solid black; */
+    font-size: 25px;
+}
+
+
+ /* Resume Section */
+.resume {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: nowrap;
+}
+
+.education h5 {
+    padding: 10px;
+    width: 20%;
+    border: 1px solid;
+    border-right: 20px solid;
+}
+
+.education ul {
+    list-style: none;
+    margin: 20px;
+    padding-right: 20px;
+    padding: 20px;
+}
+
+.education span {
+    font-weight: 500;
+}
+
+@media (max-width: 940px) {
+    .education {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .education h5 {
+        width: 50%;
+    }
+}
+
+.experience {
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: nowrap;
+}
+.experience h5 {
+    padding: 10px;
+    width: 20%;
+    border: 1px solid;
+    border-right: 20px solid;
+}
+
+.experience ul {
+    list-style: none;
+    margin: 20px;
+    padding-right: 20px;
+    padding: 20px;
+}
+
+.experience span {
+    font-weight: 500;
+}
+
+@media (max-width: 940px) {
+    .experience {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .experience h5 {
+        width: 50%;
+    }
+}
+
+hr {
+    grid-column: span 4;
+    width:25%;
+    margin: auto !important;
+    border: 1px solid green;
+}
+
+ /* Projects Section */
+.projects {
+    grid-column: span 2;
+}
+
+.projects .project-content {
+    list-style: none;
+}
+
+.projects h2 {
+    font-size: 50px;
+    margin: 50px;
+    margin-top: 70px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1600px) {
+    .projects {
+        padding-bottom: 70px;
+    }
+}
+
+/* About Section */
+.about {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.about h2 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.about p {
+    font-size: 22px;
+}
+
+@media (min-width: 1600px) {
+    .about {
+        margin-top: 120px;
+    }
+}
+@media (max-width: 1250px) {
+    .about p {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+ /* Contact Section */
+.contact {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    height: 70vh;
+    background-image: url(./images/top-view-chat-bubbles-with-telephone-receiver.jpg);
+    background-size: cover;
+}
+
+.contact h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.contact p {
+    margin-bottom: 70px;
+    font-size: 22px;
+}
+
+.ms-3:hover {
+    cursor: pointer;
+    animation: rotate 0.5s linear;
+    transform: rotateY(360deg);
+}
+
+@keyframes rotate {
+    50% {transform: rotateY(180deg);}
+}
+
+.footer {
+    grid-column: span 2;
+}
